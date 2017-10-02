@@ -1,0 +1,11 @@
+# Site settings
+title: Reasonable Faith Singapore Apologetics Ministry
+email: reasonablefaithsingapore@gmail.com
+description: >
+  We are a Singaporean apologetics ministry featuring the work of philosopher and theologian Dr. William Lane Craig
+baseurl: "" # the subpath of your site, e.g. /blog
+keywords: faith,reason,religion,christianity,apologetics,jesus,singapore
+url: "http://rf.sg" # the base hostname & protocol for your site
+# Build settings
+markdown: kramdown
+mailchimp-list: "//zee.us16.list-manage.com/subscribe/post?u=c0054e2e28f53acbc649b2ba8&amp;id=42cd9a5261"

@@ -1,0 +1,10 @@
+<div class="sidebar hidden-sm hidden-xs">
+  <div class="widget">
+    <h6 class="upper">Articles</h6>
+    <ul class="nav">
+      {% for post in site.posts %}
+      <li><a href="{{ post.url }}">{{ post.title }}<span>{{ post.date | date_to_long_string }}</span></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

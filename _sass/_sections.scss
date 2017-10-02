@@ -1,0 +1,221 @@
+.section {
+  overflow: hidden;
+  background-color: #fff;
+
+  &.gray { background-color: $pale-grey-color; }
+
+  &.navy {
+    @include color-gradient($noir-1, $noir-2);
+
+    .title, .description { color: #fff; }
+  }
+
+  p {
+    line-height: 25px;
+
+    &.description {
+      font-size: 18px;
+      line-height: 36px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .container {
+    position: relative;
+    padding: 30px 0;
+    width: 100%;
+
+    &.no-bottom { padding-bottom: 0; }
+
+    .content {
+      padding: 0 30px;
+    }
+  }
+}
+
+/******* ABOUT SECTION *******/
+
+#about h3 {
+  letter-spacing: 2px;
+}
+
+.skill-list li {
+  list-style: inherit;
+  margin: 10px 20px;
+}
+
+.wrapper {
+
+  padding: 0px 20px;
+
+  img {
+    width: 100%;
+  }
+
+  h2 {
+    margin-top: 0px;
+  }
+}
+
+/******* EXPERIENCE SECTION ******/
+
+#experience .container {
+  width: 100%;
+}
+
+h3.line-title {
+  width:100%;
+  text-align:center;
+  border-bottom: 1px solid #cecad0;
+  line-height:0.1em;
+  margin:10px 0 20px;
+}
+
+h3.line-title span {
+  background: white;
+  padding: 0 10px;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    left: 25%;  /*for adjusting timeline*/
+    top: 60px;
+    bottom: 100px;
+    background-color: #cecad0;
+  }
+
+  li {
+    overflow: hidden;
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-item {
+      width: 25%;  /*for adjusting timeline*/
+      padding-left: 15px;
+      padding-right: 20px;
+      float: left;
+      position: relative;
+
+      &:after, &.no-circle:after {
+        content: "";
+        position: absolute;
+        left: 100%;
+        top: 0;
+        width: 12px;
+        height: 12px;
+        background-color: $pale-grey-color;
+        border: 2px solid $secondary-color;
+        margin-left: -6px;
+        border-radius: 50%;
+      }
+
+      &.no-circle:after {
+        background-color: transparent;
+        border: none;
+      }
+
+      h4 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: $secondary-color;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        a {
+          color: $secondary-color;
+
+          &:hover {
+              color: $link-color;
+          }
+        }
+      }
+
+      span {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        b {
+          font-weight: 400;
+        }
+      }
+    }
+
+    .timeline-description, .timeline-title {
+      width: 70%;  /*for adjusting timeline*/
+      margin-left: 5%;
+      padding-left: 20px;
+      padding-right: 20px;
+      float: left;
+      position: relative;
+
+      h4 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #333;
+      }
+
+      p {
+        color: $text-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 727px) {
+  .timeline:before {
+    left: 35%;  /*for adjusting timeline*/
+  }
+  .timeline > li .timeline-item {
+    width: 35%;  /*for adjusting timeline*/
+  }
+  .timeline > li .timeline-description {
+    width: 60%;  /*for adjusting timeline*/
+  }
+}
+
+@media (max-width: 432px) {
+  .timeline:before {
+    width: 0px;
+  }
+  .timeline-item:after {
+    opacity: 0;
+  }
+
+  .timeline > li .timeline-item {
+    width: 100%;  /*for adjusting timeline*/
+  }
+  .timeline > li .timeline-description {
+    width: 100%;  /*for adjusting timeline*/
+    margin-left: 0;
+    padding-left: 15px;
+    margin-top: 20px;
+  }
+
+  .timeline li .timeline-item span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    float: right;
+    margin-top: -28px;
+}
+}

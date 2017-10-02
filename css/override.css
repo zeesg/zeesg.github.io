@@ -1,0 +1,49 @@
+.slide-content {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    text-align: left;
+}
+
+.slide-content h2 {
+  font-size: 40px;
+}
+
+.slide-content h4 {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.slide-content ol {
+  padding-left: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .slide-content h4, .slide-content ol {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.post-body h4 {
+    font-weight: 700;
+    text-align: center;
+}
+
+.readable h3 {
+  font-weight: 700;
+}
+
+.readable p, .readable li {
+  font-size: 18px;
+}
+
+.right-align {
+  text-align: right;
+}
+
+article img, img.responsive-img {
+  width: 100%;
+}
