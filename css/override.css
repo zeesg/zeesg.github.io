@@ -47,3 +47,36 @@
 article img, img.responsive-img {
   width: 100%;
 }
+
+
+/** CONFERENCE  **/
+
+.rfc-slide-content {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+}
+
+.rfc-slide-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.rfc-slide-content h2 {
+  font-size: 40px;
+}
+
+.rfc-slide-content h4 {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 600px) {
+  .rfc-slide-content h1 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+}

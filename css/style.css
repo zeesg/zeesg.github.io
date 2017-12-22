@@ -912,7 +912,8 @@ blockquote footer {
   border-color: #3d4146;
 }
 #topnav.scroll.dark .navigation-menu > li.active > a {
-  color: #29569A;
+  color: #80DEEA;
+  font-weight: bold;
 }
 #topnav.scroll.dark .menu-extras .menu-item {
   border-color: #3d4146;
@@ -3860,7 +3861,7 @@ footer.dark p {
   text-align: center;
 }
 #footer .footer-social ul > li > a:hover {
-  color: #29569A;
+  color: #80DEEA;
 }
 #footer .footer-social.center {
   text-align: center;

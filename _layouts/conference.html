@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include rfc-navbar.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+  </body>
+
+  <script
+  src="https://code.jquery.com/jquery-1.11.3.min.js"
+  integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g="
+  crossorigin="anonymous"></script>
+  <script src="{{ "/js/bundle.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
+
+</html>
