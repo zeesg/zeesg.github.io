@@ -83,6 +83,14 @@ article img, img.responsive-img {
   letter-spacing: 3px;
 }
 
+#speakers .team-social ul > li > a {
+    display: block;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    color: #494e53;
+}
+
 li.timeline-head .timeline-item {
   font-size: 30px;
   font-family: 'Raleway', sans-serif;
@@ -91,6 +99,14 @@ li.timeline-head .timeline-item {
 
 .timeline > li.timeline-head .timeline-item:after {
   visibility: hidden;
+}
+
+footer p a, footer p a:hover, footer p a:visited {
+  color: #80DEEA;
+}
+
+footer p a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 600px) {
